@@ -1,0 +1,185 @@
+body,
+h1,
+h2,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", monospace;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: #f5f6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  padding: 2rem;
+}
+
+.login {
+  padding: 0 2rem;
+}
+
+.login input {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  outline: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: 2px solid #999;
+  color: black;
+  height: 40px;
+}
+
+.login input[placeholder] {
+  opacity: 0.5;
+}
+
+.emailInput {
+  position: relative;
+}
+
+.inputBeforeEmail {
+  position: relative;
+}
+
+.inputEmail::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/user.svg");
+  width: 20px;
+  height: 20px;
+  margin-left: 40px;
+  position: absolute;
+  top: 10px;
+  left: -70px;
+  background-size: cover;
+  opacity: 0.5;
+  box-sizing: border-box;
+}
+
+.inputEmail::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+  position: absolute;
+  top: 0px;
+  left: -80px;
+  background-size: cover;
+  opacity: 0.5;
+  box-sizing: border-box;
+  border: 2px solid #999;
+  border-right: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.inputBeforePass {
+  position: relative;
+}
+
+.inputPass::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../img/lock.svg");
+  width: 20px;
+  height: 20px;
+  margin-left: 40px;
+  position: absolute;
+  top: 10px;
+  left: -70px;
+  background-size: cover;
+  opacity: 0.5;
+  box-sizing: border-box;
+}
+
+.inputPass::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+  position: absolute;
+  top: 0px;
+  left: -80px;
+  background-size: cover;
+  opacity: 0.5;
+  box-sizing: border-box;
+  border: 2px solid #999;
+  border-right: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.img img {
+  border-radius: 0.5rem;
+}
+
+.visibility {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: transparent;
+  top: 0px;
+  right: 5px;
+  border: none;
+  border-right: none;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+.visibility:hover {
+  opacity: 1;
+}
+
+.confirme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.login input[type="checkbox"] {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 40px;
+  position: absolute;
+  top: -15px;
+  left: -80px;
+  border-radius: 0.25rem;
+}
